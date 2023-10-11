@@ -43,6 +43,7 @@
             ArgumentNullException.ThrowIfNull(info);
             Key = info.GetString("Key");
             HasValue = info.GetBoolean("HasValue");
+            Type = typeof(T);
         }
 
         /// <summary>
