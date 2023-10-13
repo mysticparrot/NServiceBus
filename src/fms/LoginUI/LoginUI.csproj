@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Faker.Net" Version="2.0.154" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\NServiceBus.Core.Analyzer\NServiceBus.Core.Analyzer.csproj" />
+    <ProjectReference Include="..\..\NServiceBus.Core\NServiceBus.Core.csproj" />
+    <ProjectReference Include="..\..\WorkRequestService.Messages\WorkRequestService.Messages.csproj" />
+  </ItemGroup>
+
+</Project>
