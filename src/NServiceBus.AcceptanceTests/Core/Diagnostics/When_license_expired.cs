@@ -28,25 +28,25 @@
             }
         }
 
-        static string ExpiredLicense = @"<?xml version=""1.0"" encoding=""utf-8""?>
-<license id = ""b13ba7a3-5fe8-4745-a041-2d6a9f7462cf"" expiration=""2015-03-18T00:00:00.0000000"" type=""Subscription"" Applications=""All"" NumberOfNodes=""4"" UpgradeProtectionExpiration=""2015-03-18"">
-  <name>Ultimate Test</name>
-  <Signature xmlns = ""http://www.w3.org/2000/09/xmldsig#"">
-    <SignedInfo>
-      <CanonicalizationMethod Algorithm= ""http://www.w3.org/TR/2001/REC-xml-c14n-20010315"" />
-      <SignatureMethod Algorithm= ""http://www.w3.org/2000/09/xmldsig#rsa-sha1"" />
-      <Reference URI= """">
-        <Transforms>
-          <Transform Algorithm= ""http://www.w3.org/2000/09/xmldsig#enveloped-signature"" />
-        </Transforms>
-        <DigestMethod Algorithm= ""http://www.w3.org/2000/09/xmldsig#sha1"" />
-        <DigestValue>kz07xp2x3tjk+ixQglCHq40RJg8=</DigestValue>
-      </Reference>
-    </SignedInfo>
-    <SignatureValue>WN0zCL3i2vvwtPFI7/Qbo8ymhJFeYpauFqFbuFynOfWrKd5PMfcY1ToWZyz1vs6dLFL9kPngtVRX9yZZXC1y6la8oS/rnBq0Jwm2pFqCtIVtXKee93dTTx7Bij9x7XUBtAVpZDszbZPfLnrdHwS4BFn4CTvOJRiSUEB1ks1ONiQ=</SignatureValue>
-  </Signature>
-</license>
-";
+        //        static string ExpiredLicense = @"<?xml version=""1.0"" encoding=""utf-8""?>
+        //<license id = ""b13ba7a3-5fe8-4745-a041-2d6a9f7462cf"" expiration=""2015-03-18T00:00:00.0000000"" type=""Subscription"" Applications=""All"" NumberOfNodes=""4"" UpgradeProtectionExpiration=""2015-03-18"">
+        //  <name>Ultimate Test</name>
+        //  <Signature xmlns = ""http://www.w3.org/2000/09/xmldsig#"">
+        //    <SignedInfo>
+        //      <CanonicalizationMethod Algorithm= ""http://www.w3.org/TR/2001/REC-xml-c14n-20010315"" />
+        //      <SignatureMethod Algorithm= ""http://www.w3.org/2000/09/xmldsig#rsa-sha1"" />
+        //      <Reference URI= """">
+        //        <Transforms>
+        //          <Transform Algorithm= ""http://www.w3.org/2000/09/xmldsig#enveloped-signature"" />
+        //        </Transforms>
+        //        <DigestMethod Algorithm= ""http://www.w3.org/2000/09/xmldsig#sha1"" />
+        //        <DigestValue>kz07xp2x3tjk+ixQglCHq40RJg8=</DigestValue>
+        //      </Reference>
+        //    </SignedInfo>
+        //    <SignatureValue>WN0zCL3i2vvwtPFI7/Qbo8ymhJFeYpauFqFbuFynOfWrKd5PMfcY1ToWZyz1vs6dLFL9kPngtVRX9yZZXC1y6la8oS/rnBq0Jwm2pFqCtIVtXKee93dTTx7Bij9x7XUBtAVpZDszbZPfLnrdHwS4BFn4CTvOJRiSUEB1ks1ONiQ=</SignatureValue>
+        //  </Signature>
+        //</license>
+        //";
 
         public class Context : ScenarioContext
         {
@@ -60,7 +60,7 @@
             {
                 EndpointSetup<DefaultServer>(c =>
                 {
-                    c.License(ExpiredLicense);
+                    //c.License(ExpiredLicense);
                     c.AuditProcessedMessagesTo<AuditSpyEndpoint>();
                 });
             }

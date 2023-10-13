@@ -8,6 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Licensing\**" />
+    <EmbeddedResource Remove="Licensing\**" />
+    <None Remove="Licensing\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\NServiceBus.Core\NServiceBus.Core.csproj" />
     <ProjectReference Include="..\NServiceBus.Testing.Fakes\NServiceBus.Testing.Fakes.csproj" />
   </ItemGroup>
